@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>My Account</h2>
+
+<a href="#">Dashboard</a>
+<a href="#">Attendance</a>
+<a href="#">Assignments</a>
+<a href="#">Notices</a>
+<a href="#">Performance</a>
+<a href="#">Feedback</a>
+<a href="#">Profile</a>
+</div>
+
+<div class="main">
+
+<div class="topbar">
+Welcome <span id="name"></span>
+</div>
+
+<script>
+document.getElementById("name").innerHTML = localStorage.getItem("username");
+</script>
+
+
+
+<div class="cards">
+
+<div class="card">
+<h3>Attendance</h3>
+<p>View your attendance</p>
+</div>
+
+<div class="card">
+<h3>Assignments</h3>
+<p>Check submissions</p>
+</div>
+
+<div class="card">
+<h3>Notices</h3>
+<p>Latest updates</p>
+</div>
+
+<div class="card">
+<h3>Performance</h3>
+<p>Academic progress</p>
+</div>
+
+<div class="card">
+<h3>Feedback</h3>
+<p>Submit feedback</p>
+</div>
+
+<div class="card">
+<h3>Profile</h3>
+<p>Your details</p>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
