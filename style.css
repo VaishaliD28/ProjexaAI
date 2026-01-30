@@ -1,8 +1,10 @@
 body{
 margin:0;
 font-family:Segoe UI;
-background:#f1f4f9;
+background:#0E7AB6;
 }
+
+
 
 /* LOGIN */
 
@@ -47,9 +49,10 @@ background:#1e3a8a;
 position:fixed;
 width:200px;
 height:100%;
-background:#1e293b;
+background:#003076;
 padding-top:20px;
 }
+
 
 .sidebar h2{
 color:white;
@@ -112,3 +115,45 @@ color:#555;
 transform:translateY(-5px);
 transition:.3s;
 }
+
+
+/* LOGO LOGIN */
+
+.logo{
+width:90px;
+margin-bottom:10px;
+}
+
+/* DASHBOARD LOGO */
+
+.dash-logo{
+width:40px;
+vertical-align:middle;
+margin-right:10px;
+}
+
+/* TOPBAR UPDATE */
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+padding:15px 25px;
+font-size:18px;
+box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+.top-left{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+}
+
+.campus-img{
+width:100%;
+margin-top:8px;
+border-radius:8px;
+}
+
