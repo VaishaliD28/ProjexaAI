@@ -1,16 +1,15 @@
 function login(){
 
-let u = document.getElementById("user").value;
-let p = document.getElementById("pass").value;
+var u = document.getElementById("user").value;
+var p = document.getElementById("pass").value;
 
-if(u !== "" && p !== ""){
-
-localStorage.setItem("username", u);
-
-window.location = "dashboard.html";
+if(u != "" && p != ""){
+window.location.href = "dashboard.html?name=" + u;
 }
 else{
-document.getElementById("msg").innerHTML = "Please enter ID and Password";
+document.getElementById("msg").innerHTML = "Please enter Name and Password";
 }
 
 }
+
+
