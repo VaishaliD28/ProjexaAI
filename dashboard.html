@@ -8,63 +8,153 @@
 <body>
 
 <div class="sidebar">
-<h2>My Account</h2>
+<h2>My Profile</h2>
 
-<a href="#">Dashboard</a>
-<a href="#">Attendance</a>
-<a href="#">Assignments</a>
-<a href="#">Notices</a>
-<a href="#">Performance</a>
-<a href="#">Feedback</a>
-<a href="#">Profile</a>
+<a href="#attendance">Attendance</a>
+<a href="#planner">Study Planner</a>
+<a href="#feedback">Feedback</a>
+<a href="#career">Career</a>
+<a href="#mental">Mental Wellness</a>
+<a href="#notify">Notifications</a>
+<a href="#green">Green Campus</a>
+<a href="#peer">Peer Learning</a>
+<a href="index.html">Logout</a>
 </div>
 
 <div class="main">
 
 <div class="topbar">
-Welcome <span id="name"></span>
+<div class="top-left">
+<img src="logo.png" class="dash-logo">
+<span>Smart University Profile</span>
 </div>
 
-<script>
-document.getElementById("name").innerHTML = localStorage.getItem("username");
-</script>
-
-
+<div>
+Welcome <span id="name"></span>
+</div>
+</div>
 
 <div class="cards">
 
-<div class="card">
+<div class="card" id="attendance">
 <h3>Attendance</h3>
-<p>View your attendance</p>
+<p id="att"></p>
+<p id="status"></p>
 </div>
 
-<div class="card">
-<h3>Assignments</h3>
-<p>Check submissions</p>
+<div class="card" id="planner">
+<h3>Study Planner</h3>
+<ul id="plan"></ul>
 </div>
 
-<div class="card">
-<h3>Notices</h3>
-<p>Latest updates</p>
-</div>
-
-<div class="card">
-<h3>Performance</h3>
-<p>Academic progress</p>
-</div>
-
-<div class="card">
+<div class="card" id="feedback">
 <h3>Feedback</h3>
-<p>Submit feedback</p>
+<textarea placeholder="Write feedback here"></textarea><br><br>
+<button onclick="submit()">Submit</button>
+<p id="fb"></p>
 </div>
 
-<div class="card">
-<h3>Profile</h3>
-<p>Your details</p>
+<div class="card" id="career">
+<h3>Career Tracker</h3>
+<p id="skill"></p>
+<p id="ready"></p>
+</div>
+
+<div class="card" id="mental">
+<h3>Mental Health & Wellness</h3>
+<p>Stress Level: Normal</p>
+<p>Suggestion: Take breaks and stay active.</p>
+</div>
+
+<div class="card" id="notify">
+<h3>Smart Notifications</h3>
+<ul>
+<li>Assignment due tomorrow</li>
+<li>Attendance updated</li>
+<li>New notice available</li>
+</ul>
+</div>
+
+<div class="card" id="green" onclick="toggleCampus()">
+<h3>Green Campus (Click to View)</h3>
+
+<div id="campusGallery" style="display:none;margin-top:10px;">
+<img src="campus1.jpg" class="campus-img">
+<img src="campus2.jpg" class="campus-img">
+<img src="campus3.jpg" class="campus-img">
+<img src="campus4.jpg" class="campus-img">
 </div>
 
 </div>
+
+
+<div class="card" id="peer">
+<h3>Peer-to-Peer Learning</h3>
+<p>Latest Topic: DBMS Normalization</p>
+<p>Status: Answered by Senior</p>
 </div>
+
+</div>
+
+</div>
+
+<script>
+
+// GET USER NAME
+const params = new URLSearchParams(window.location.search);
+let user = params.get("name");
+document.getElementById("name").innerHTML = user;
+
+// SIMPLE USER DATA (Demo)
+let users={
+"Vaishali":{att:78,skill:"HTML, CSS",ready:"60%"},
+"Aman":{att:65,skill:"Python",ready:"45%"},
+"Neha":{att:85,skill:"Java, SQL",ready:"75%"}
+};
+
+// DEFAULT DATA
+let data=users[user] || {att:70,skill:"HTML",ready:"50%"};
+
+// ATTENDANCE
+document.getElementById("att").innerHTML="Attendance: "+data.att+"%";
+document.getElementById("status").innerHTML=data.att>=75?"Status: Safe":"Status: Low";
+
+// STUDY PLAN
+let subjects=["Python","DBMS","Web","Revision","Practice"];
+subjects.forEach(s=>{
+document.getElementById("plan").innerHTML+="<li>"+s+"</li>";
+});
+
+// CAREER
+document.getElementById("skill").innerHTML="Skills: "+data.skill;
+document.getElementById("ready").innerHTML="Readiness: "+data.ready;
+
+// FEEDBACK
+function submit(){
+document.getElementById("fb").innerHTML="Thank you "+user+" for your feedback!";
+}
+function toggleCampus(){
+let g = document.getElementById("campusGallery");
+
+if(g.style.display === "none"){
+g.style.display = "block";
+}else{
+g.style.display = "none";
+}
+}
+
+
+</script>
+
+<script>
+var params = new URLSearchParams(window.location.search);
+var name = params.get("name");
+
+if(name){
+document.getElementById("name").innerHTML = name;
+}
+</script>
 
 </body>
 </html>
+
