@@ -17,13 +17,21 @@
 <input type="password" id="pass" placeholder="Enter Password">
 
 <button onclick="login()">Login</button>
+<button onclick="showSignup()">Create Account</button>
+<div id="signupBox" style="display:none;">
+
+<h3>Create Account</h3>
+
+<input type="text" id="newUser" placeholder="Enter Name">
+<input type="password" id="newPass" placeholder="Enter Password">
+
+<button onclick="signup()">Create</button>
+
+<p id="signupMsg"></p>
+
+</div>
 
 <p id="msg"></p>
 
 </div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
 
