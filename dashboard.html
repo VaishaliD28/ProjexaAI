@@ -18,7 +18,7 @@
 <a href="#notify">Notifications</a>
 <a href="#green">Green Campus</a>
 <a href="#peer">Peer Learning</a>
-<a href="index.html">Logout</a>
+<a href="#" onclick="logout()">Logout</a>
 </div>
 
 <div class="main">
@@ -76,86 +76,23 @@ Welcome <span id="name"></span>
 </div>
 
 <div class="card" id="green" onclick="toggleCampus()">
-<h3>Green Campus (Click to View)</h3>
-
-<div id="campusGallery" style="display:none;margin-top:10px;">
-<img src="campus1.jpg" class="campus-img">
-<img src="campus2.jpg" class="campus-img">
-<img src="campus3.jpg" class="campus-img">
-<img src="campus4.jpg" class="campus-img">
+<h3>Green Campus</h3>
+<div id="campusGallery" style="display:none;">
+<img src="campus1.jpg">
+<img src="campus2.jpg">
+<img src="campus3.jpg">
+<img src="campus4.jpg">
+</div>
 </div>
 
 </div>
-
-
-<div class="card" id="peer">
-<h3>Peer-to-Peer Learning</h3>
-<p>Latest Topic: DBMS Normalization</p>
-<p>Status: Answered by Senior</p>
 </div>
 
-</div>
-
-</div>
-
-<script>
-
-// GET USER NAME
-const params = new URLSearchParams(window.location.search);
-let user = params.get("name");
-document.getElementById("name").innerHTML = user;
-
-// SIMPLE USER DATA (Demo)
-let users={
-"Vaishali":{att:78,skill:"HTML, CSS",ready:"60%"},
-"Aman":{att:65,skill:"Python",ready:"45%"},
-"Neha":{att:85,skill:"Java, SQL",ready:"75%"}
-};
-
-// DEFAULT DATA
-let data=users[user] || {att:70,skill:"HTML",ready:"50%"};
-
-// ATTENDANCE
-document.getElementById("att").innerHTML="Attendance: "+data.att+"%";
-document.getElementById("status").innerHTML=data.att>=75?"Status: Safe":"Status: Low";
-
-// STUDY PLAN
-let subjects=["Python","DBMS","Web","Revision","Practice"];
-subjects.forEach(s=>{
-document.getElementById("plan").innerHTML+="<li>"+s+"</li>";
-});
-
-// CAREER
-document.getElementById("skill").innerHTML="Skills: "+data.skill;
-document.getElementById("ready").innerHTML="Readiness: "+data.ready;
-
-// FEEDBACK
-function submit(){
-document.getElementById("fb").innerHTML="Thank you "+user+" for your feedback!";
-}
-function toggleCampus(){
-let g = document.getElementById("campusGallery");
-
-if(g.style.display === "none"){
-g.style.display = "block";
-}else{
-g.style.display = "none";
-}
-}
-
-
-</script>
-
-<script>
-var params = new URLSearchParams(window.location.search);
-var name = params.get("name");
-
-if(name){
-document.getElementById("name").innerHTML = name;
-}
-</script>
+<!-- 👇 ONLY THIS SCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>
+
 
 
