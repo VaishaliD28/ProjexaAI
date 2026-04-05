@@ -1,0 +1,902 @@
+[
+  {
+    "student_id": "S1001",
+    "name": "Aarav Sharma",
+    "age": 20,
+    "course": "B.Tech CSE",
+    "year": "3rd",
+    "attendance_percentage": 85,
+    "cgpa": 8.7,
+    "assignments": [
+      {"subject_name": "Data Structures", "status": "Completed", "marks": 88},
+      {"subject_name": "Algorithms", "status": "Completed", "marks": 84},
+      {"subject_name": "Operating Systems", "status": "Completed", "marks": 90}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.9
+  },
+  {
+    "student_id": "S1002",
+    "name": "Bhavya Reddy",
+    "age": 19,
+    "course": "AI/ML",
+    "year": "2nd",
+    "attendance_percentage": 45,
+    "cgpa": 5.2,
+    "assignments": [
+      {"subject_name": "Python Programming", "status": "Completed", "marks": 55},
+      {"subject_name": "Linear Algebra", "status": "Pending", "marks": 0},
+      {"subject_name": "Data Visualization", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 4,
+    "risk_level": "High",
+    "predicted_cgpa": 4.8
+  },
+  {
+    "student_id": "S1003",
+    "name": "Chirag Mehta",
+    "age": 21,
+    "course": "IT",
+    "year": "4th",
+    "attendance_percentage": 92,
+    "cgpa": 9.2,
+    "assignments": [
+      {"subject_name": "Web Development", "status": "Completed", "marks": 95},
+      {"subject_name": "Cloud Computing", "status": "Completed", "marks": 91},
+      {"subject_name": "Cyber Security", "status": "Completed", "marks": 94}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 9,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.3
+  },
+  {
+    "student_id": "S1004",
+    "name": "Divya Nair",
+    "age": 18,
+    "course": "B.Tech CSE",
+    "year": "1st",
+    "attendance_percentage": 70,
+    "cgpa": 7.5,
+    "assignments": [
+      {"subject_name": "Programming Basics", "status": "Completed", "marks": 75},
+      {"subject_name": "Discrete Math", "status": "Pending", "marks": 0},
+      {"subject_name": "Digital Logic", "status": "Completed", "marks": 80}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Medium",
+    "predicted_cgpa": 7.3
+  },
+  {
+    "student_id": "S1005",
+    "name": "Eshwar Patil",
+    "age": 20,
+    "course": "AI/ML",
+    "year": "3rd",
+    "attendance_percentage": 30,
+    "cgpa": 4.1,
+    "assignments": [
+      {"subject_name": "Machine Learning", "status": "Pending", "marks": 0},
+      {"subject_name": "Deep Learning", "status": "Pending", "marks": 0},
+      {"subject_name": "Statistics", "status": "Completed", "marks": 42}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 3,
+    "risk_level": "High",
+    "predicted_cgpa": 3.9
+  },
+  {
+    "student_id": "S1006",
+    "name": "Farah Khan",
+    "age": 19,
+    "course": "IT",
+    "year": "2nd",
+    "attendance_percentage": 88,
+    "cgpa": 8.9,
+    "assignments": [
+      {"subject_name": "Database Systems", "status": "Completed", "marks": 90},
+      {"subject_name": "Computer Networks", "status": "Completed", "marks": 88},
+      {"subject_name": "UI/UX Design", "status": "Completed", "marks": 92}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.0
+  },
+  {
+    "student_id": "S1007",
+    "name": "Gaurav Singh",
+    "age": 22,
+    "course": "B.Tech CSE",
+    "year": "4th",
+    "attendance_percentage": 60,
+    "cgpa": 6.8,
+    "assignments": [
+      {"subject_name": "Software Engineering", "status": "Completed", "marks": 70},
+      {"subject_name": "Big Data", "status": "Pending", "marks": 0},
+      {"subject_name": "Compiler Design", "status": "Completed", "marks": 68}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 6,
+    "risk_level": "Medium",
+    "predicted_cgpa": 6.5
+  },
+  {
+    "student_id": "S1008",
+    "name": "Himani Joshi",
+    "age": 18,
+    "course": "AI/ML",
+    "year": "1st",
+    "attendance_percentage": 95,
+    "cgpa": 9.5,
+    "assignments": [
+      {"subject_name": "Intro to AI", "status": "Completed", "marks": 98},
+      {"subject_name": "Calculus", "status": "Completed", "marks": 94},
+      {"subject_name": "Python", "status": "Completed", "marks": 97}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 9,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.6
+  },
+  {
+    "student_id": "S1009",
+    "name": "Ishaan Gupta",
+    "age": 20,
+    "course": "IT",
+    "year": "3rd",
+    "attendance_percentage": 40,
+    "cgpa": 5.5,
+    "assignments": [
+      {"subject_name": "Network Security", "status": "Completed", "marks": 58},
+      {"subject_name": "Linux Admin", "status": "Pending", "marks": 0},
+      {"subject_name": "Web Technologies", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 5,
+    "risk_level": "High",
+    "predicted_cgpa": 5.0
+  },
+  {
+    "student_id": "S1010",
+    "name": "Janvi Desai",
+    "age": 19,
+    "course": "B.Tech CSE",
+    "year": "2nd",
+    "attendance_percentage": 78,
+    "cgpa": 7.9,
+    "assignments": [
+      {"subject_name": "Object Oriented Prog", "status": "Completed", "marks": 82},
+      {"subject_name": "Computer Architecture", "status": "Completed", "marks": 79},
+      {"subject_name": "Discrete Structures", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Medium",
+    "predicted_cgpa": 7.7
+  },
+  {
+    "student_id": "S1011",
+    "name": "Kunal Verma",
+    "age": 21,
+    "course": "AI/ML",
+    "year": "4th",
+    "attendance_percentage": 25,
+    "cgpa": 3.8,
+    "assignments": [
+      {"subject_name": "Reinforcement Learning", "status": "Pending", "marks": 0},
+      {"subject_name": "NLP", "status": "Pending", "marks": 0},
+      {"subject_name": "Computer Vision", "status": "Completed", "marks": 38}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 2,
+    "risk_level": "High",
+    "predicted_cgpa": 3.2
+  },
+  {
+    "student_id": "S1012",
+    "name": "Lavanya Krishnan",
+    "age": 18,
+    "course": "IT",
+    "year": "1st",
+    "attendance_percentage": 90,
+    "cgpa": 8.5,
+    "assignments": [
+      {"subject_name": "Fundamentals of IT", "status": "Completed", "marks": 86},
+      {"subject_name": "English", "status": "Completed", "marks": 90},
+      {"subject_name": "Maths", "status": "Completed", "marks": 84}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.7
+  },
+  {
+    "student_id": "S1013",
+    "name": "Manav Thakur",
+    "age": 20,
+    "course": "B.Tech CSE",
+    "year": "3rd",
+    "attendance_percentage": 65,
+    "cgpa": 6.2,
+    "assignments": [
+      {"subject_name": "Theory of Computation", "status": "Completed", "marks": 64},
+      {"subject_name": "Microprocessors", "status": "Completed", "marks": 60},
+      {"subject_name": "Java Programming", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 6,
+    "risk_level": "Medium",
+    "predicted_cgpa": 6.0
+  },
+  {
+    "student_id": "S1014",
+    "name": "Neha Agarwal",
+    "age": 19,
+    "course": "AI/ML",
+    "year": "2nd",
+    "attendance_percentage": 82,
+    "cgpa": 8.2,
+    "assignments": [
+      {"subject_name": "Data Mining", "status": "Completed", "marks": 83},
+      {"subject_name": "Probability", "status": "Completed", "marks": 81},
+      {"subject_name": "R Programming", "status": "Completed", "marks": 85}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.4
+  },
+  {
+    "student_id": "S1015",
+    "name": "Omkar Rane",
+    "age": 22,
+    "course": "IT",
+    "year": "4th",
+    "attendance_percentage": 50,
+    "cgpa": 5.0,
+    "assignments": [
+      {"subject_name": "Mobile Computing", "status": "Pending", "marks": 0},
+      {"subject_name": "Information Security", "status": "Completed", "marks": 52},
+      {"subject_name": "Project Work", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 4,
+    "risk_level": "High",
+    "predicted_cgpa": 4.5
+  },
+  {
+    "student_id": "S1016",
+    "name": "Pooja Sinha",
+    "age": 18,
+    "course": "B.Tech CSE",
+    "year": "1st",
+    "attendance_percentage": 93,
+    "cgpa": 9.0,
+    "assignments": [
+      {"subject_name": "C Programming", "status": "Completed", "marks": 92},
+      {"subject_name": "Physics", "status": "Completed", "marks": 89},
+      {"subject_name": "Chemistry", "status": "Completed", "marks": 91}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.1
+  },
+  {
+    "student_id": "S1017",
+    "name": "Qasim Ali",
+    "age": 20,
+    "course": "AI/ML",
+    "year": "3rd",
+    "attendance_percentage": 35,
+    "cgpa": 4.5,
+    "assignments": [
+      {"subject_name": "Neural Networks", "status": "Pending", "marks": 0},
+      {"subject_name": "Data Science", "status": "Completed", "marks": 46},
+      {"subject_name": "Optimization", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 3,
+    "risk_level": "High",
+    "predicted_cgpa": 4.0
+  },
+  {
+    "student_id": "S1018",
+    "name": "Ritika Malhotra",
+    "age": 19,
+    "course": "IT",
+    "year": "2nd",
+    "attendance_percentage": 87,
+    "cgpa": 8.4,
+    "assignments": [
+      {"subject_name": "Data Structures", "status": "Completed", "marks": 86},
+      {"subject_name": "OS", "status": "Completed", "marks": 84},
+      {"subject_name": "DBMS", "status": "Completed", "marks": 88}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.6
+  },
+  {
+    "student_id": "S1019",
+    "name": "Sahil Sheikh",
+    "age": 21,
+    "course": "B.Tech CSE",
+    "year": "4th",
+    "attendance_percentage": 72,
+    "cgpa": 7.0,
+    "assignments": [
+      {"subject_name": "Distributed Systems", "status": "Completed", "marks": 72},
+      {"subject_name": "Image Processing", "status": "Completed", "marks": 70},
+      {"subject_name": "Ethical Hacking", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 6,
+    "risk_level": "Medium",
+    "predicted_cgpa": 6.8
+  },
+  {
+    "student_id": "S1020",
+    "name": "Tanvi Bansal",
+    "age": 18,
+    "course": "AI/ML",
+    "year": "1st",
+    "attendance_percentage": 98,
+    "cgpa": 9.8,
+    "assignments": [
+      {"subject_name": "Maths for ML", "status": "Completed", "marks": 99},
+      {"subject_name": "Programming Fundamentals", "status": "Completed", "marks": 98},
+      {"subject_name": "Ethics in AI", "status": "Completed", "marks": 97}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 9,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.9
+  },
+  {
+    "student_id": "S1021",
+    "name": "Uday Choudhary",
+    "age": 20,
+    "course": "IT",
+    "year": "3rd",
+    "attendance_percentage": 55,
+    "cgpa": 5.9,
+    "assignments": [
+      {"subject_name": "Cryptography", "status": "Completed", "marks": 60},
+      {"subject_name": "Software Testing", "status": "Pending", "marks": 0},
+      {"subject_name": "Web Services", "status": "Completed", "marks": 58}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 5,
+    "risk_level": "Medium",
+    "predicted_cgpa": 5.6
+  },
+  {
+    "student_id": "S1022",
+    "name": "Vidya Iyer",
+    "age": 19,
+    "course": "B.Tech CSE",
+    "year": "2nd",
+    "attendance_percentage": 80,
+    "cgpa": 7.7,
+    "assignments": [
+      {"subject_name": "Design Patterns", "status": "Completed", "marks": 78},
+      {"subject_name": "Software Architecture", "status": "Completed", "marks": 76},
+      {"subject_name": "Testing", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Medium",
+    "predicted_cgpa": 7.5
+  },
+  {
+    "student_id": "S1023",
+    "name": "Wasiq Khan",
+    "age": 22,
+    "course": "AI/ML",
+    "year": "4th",
+    "attendance_percentage": 20,
+    "cgpa": 3.5,
+    "assignments": [
+      {"subject_name": "Big Data Analytics", "status": "Pending", "marks": 0},
+      {"subject_name": "AI Ethics", "status": "Pending", "marks": 0},
+      {"subject_name": "Capstone Project", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 2,
+    "risk_level": "High",
+    "predicted_cgpa": 2.9
+  },
+  {
+    "student_id": "S1024",
+    "name": "Xena D'Souza",
+    "age": 18,
+    "course": "IT",
+    "year": "1st",
+    "attendance_percentage": 89,
+    "cgpa": 8.6,
+    "assignments": [
+      {"subject_name": "IT Essentials", "status": "Completed", "marks": 87},
+      {"subject_name": "Communication Skills", "status": "Completed", "marks": 88},
+      {"subject_name": "Environmental Science", "status": "Completed", "marks": 85}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.8
+  },
+  {
+    "student_id": "S1025",
+    "name": "Yashwant Rao",
+    "age": 20,
+    "course": "B.Tech CSE",
+    "year": "3rd",
+    "attendance_percentage": 68,
+    "cgpa": 6.5,
+    "assignments": [
+      {"subject_name": "Computer Graphics", "status": "Completed", "marks": 66},
+      {"subject_name": "Multimedia", "status": "Completed", "marks": 65},
+      {"subject_name": "Parallel Computing", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 6,
+    "risk_level": "Medium",
+    "predicted_cgpa": 6.3
+  },
+  {
+    "student_id": "S1026",
+    "name": "Zara Ansari",
+    "age": 19,
+    "course": "AI/ML",
+    "year": "2nd",
+    "attendance_percentage": 42,
+    "cgpa": 5.1,
+    "assignments": [
+      {"subject_name": "Pattern Recognition", "status": "Pending", "marks": 0},
+      {"subject_name": "Time Series", "status": "Completed", "marks": 53},
+      {"subject_name": "ML Ops", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 4,
+    "risk_level": "High",
+    "predicted_cgpa": 4.6
+  },
+  {
+    "student_id": "S1027",
+    "name": "Aditya Kulkarni",
+    "age": 21,
+    "course": "IT",
+    "year": "4th",
+    "attendance_percentage": 91,
+    "cgpa": 9.1,
+    "assignments": [
+      {"subject_name": "IoT", "status": "Completed", "marks": 93},
+      {"subject_name": "Blockchain", "status": "Completed", "marks": 90},
+      {"subject_name": "DevOps", "status": "Completed", "marks": 92}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 9,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.2
+  },
+  {
+    "student_id": "S1028",
+    "name": "Bhumi Rajput",
+    "age": 18,
+    "course": "B.Tech CSE",
+    "year": "1st",
+    "attendance_percentage": 77,
+    "cgpa": 7.4,
+    "assignments": [
+      {"subject_name": "Engineering Drawing", "status": "Completed", "marks": 74},
+      {"subject_name": "Basic Electronics", "status": "Pending", "marks": 0},
+      {"subject_name": "Maths", "status": "Completed", "marks": 78}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Medium",
+    "predicted_cgpa": 7.2
+  },
+  {
+    "student_id": "S1029",
+    "name": "Chirag Shetty",
+    "age": 20,
+    "course": "AI/ML",
+    "year": "3rd",
+    "attendance_percentage": 33,
+    "cgpa": 4.3,
+    "assignments": [
+      {"subject_name": "Generative AI", "status": "Pending", "marks": 0},
+      {"subject_name": "Bayesian Methods", "status": "Completed", "marks": 44},
+      {"subject_name": "Reinforcement Learning", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 3,
+    "risk_level": "High",
+    "predicted_cgpa": 3.8
+  },
+  {
+    "student_id": "S1030",
+    "name": "Deepika Padukone",
+    "age": 19,
+    "course": "IT",
+    "year": "2nd",
+    "attendance_percentage": 96,
+    "cgpa": 9.3,
+    "assignments": [
+      {"subject_name": "Advanced DBMS", "status": "Completed", "marks": 94},
+      {"subject_name": "Cloud Infra", "status": "Completed", "marks": 93},
+      {"subject_name": "Cyber Laws", "status": "Completed", "marks": 95}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 9,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.4
+  },
+  {
+    "student_id": "S1031",
+    "name": "Eklavya Pandey",
+    "age": 22,
+    "course": "B.Tech CSE",
+    "year": "4th",
+    "attendance_percentage": 48,
+    "cgpa": 5.4,
+    "assignments": [
+      {"subject_name": "Quantum Computing", "status": "Pending", "marks": 0},
+      {"subject_name": "Seminar", "status": "Completed", "marks": 55},
+      {"subject_name": "Project", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 4,
+    "risk_level": "High",
+    "predicted_cgpa": 4.9
+  },
+  {
+    "student_id": "S1032",
+    "name": "Falak Mirza",
+    "age": 18,
+    "course": "AI/ML",
+    "year": "1st",
+    "attendance_percentage": 83,
+    "cgpa": 8.0,
+    "assignments": [
+      {"subject_name": "Logic Building", "status": "Completed", "marks": 81},
+      {"subject_name": "Intro to Python", "status": "Completed", "marks": 82},
+      {"subject_name": "Algebra", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.1
+  },
+  {
+    "student_id": "S1033",
+    "name": "Girish Nandan",
+    "age": 20,
+    "course": "IT",
+    "year": "3rd",
+    "attendance_percentage": 63,
+    "cgpa": 6.0,
+    "assignments": [
+      {"subject_name": "Wireless Networks", "status": "Completed", "marks": 62},
+      {"subject_name": "Network Programming", "status": "Pending", "marks": 0},
+      {"subject_name": "System Admin", "status": "Completed", "marks": 60}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 6,
+    "risk_level": "Medium",
+    "predicted_cgpa": 5.8
+  },
+  {
+    "student_id": "S1034",
+    "name": "Harshita Jha",
+    "age": 19,
+    "course": "B.Tech CSE",
+    "year": "2nd",
+    "attendance_percentage": 75,
+    "cgpa": 7.2,
+    "assignments": [
+      {"subject_name": "Unix Programming", "status": "Completed", "marks": 74},
+      {"subject_name": "Shell Scripting", "status": "Completed", "marks": 71},
+      {"subject_name": "Computer Ethics", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Medium",
+    "predicted_cgpa": 7.0
+  },
+  {
+    "student_id": "S1035",
+    "name": "Iqbal Singh",
+    "age": 21,
+    "course": "AI/ML",
+    "year": "4th",
+    "attendance_percentage": 28,
+    "cgpa": 3.9,
+    "assignments": [
+      {"subject_name": "AI in Healthcare", "status": "Pending", "marks": 0},
+      {"subject_name": "Robotics", "status": "Pending", "marks": 0},
+      {"subject_name": "Final Year Project", "status": "Completed", "marks": 40}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 3,
+    "risk_level": "High",
+    "predicted_cgpa": 3.4
+  },
+  {
+    "student_id": "S1036",
+    "name": "Jasmine Kaur",
+    "age": 18,
+    "course": "IT",
+    "year": "1st",
+    "attendance_percentage": 94,
+    "cgpa": 8.8,
+    "assignments": [
+      {"subject_name": "Digital Literacy", "status": "Completed", "marks": 89},
+      {"subject_name": "Web Design", "status": "Completed", "marks": 90},
+      {"subject_name": "Business Communication", "status": "Completed", "marks": 88}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.0
+  },
+  {
+    "student_id": "S1037",
+    "name": "Karan Malhotra",
+    "age": 20,
+    "course": "B.Tech CSE",
+    "year": "3rd",
+    "attendance_percentage": 58,
+    "cgpa": 5.7,
+    "assignments": [
+      {"subject_name": "Mobile App Dev", "status": "Completed", "marks": 59},
+      {"subject_name": "Cloud Native", "status": "Pending", "marks": 0},
+      {"subject_name": "Security", "status": "Completed", "marks": 56}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 5,
+    "risk_level": "Medium",
+    "predicted_cgpa": 5.4
+  },
+  {
+    "student_id": "S1038",
+    "name": "Leena Mukherjee",
+    "age": 19,
+    "course": "AI/ML",
+    "year": "2nd",
+    "attendance_percentage": 86,
+    "cgpa": 8.3,
+    "assignments": [
+      {"subject_name": "Feature Engineering", "status": "Completed", "marks": 84},
+      {"subject_name": "Model Deployment", "status": "Completed", "marks": 83},
+      {"subject_name": "SQL for ML", "status": "Completed", "marks": 85}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.5
+  },
+  {
+    "student_id": "S1039",
+    "name": "Mithun Das",
+    "age": 22,
+    "course": "IT",
+    "year": "4th",
+    "attendance_percentage": 38,
+    "cgpa": 4.8,
+    "assignments": [
+      {"subject_name": "IT Service Mgmt", "status": "Pending", "marks": 0},
+      {"subject_name": "Disaster Recovery", "status": "Completed", "marks": 49},
+      {"subject_name": "Internship Report", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 4,
+    "risk_level": "High",
+    "predicted_cgpa": 4.3
+  },
+  {
+    "student_id": "S1040",
+    "name": "Nandini Reddy",
+    "age": 18,
+    "course": "B.Tech CSE",
+    "year": "1st",
+    "attendance_percentage": 97,
+    "cgpa": 9.4,
+    "assignments": [
+      {"subject_name": "Problem Solving", "status": "Completed", "marks": 96},
+      {"subject_name": "Intro to Computing", "status": "Completed", "marks": 94},
+      {"subject_name": "Lab Skills", "status": "Completed", "marks": 95}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 9,
+    "risk_level": "Low",
+    "predicted_cgpa": 9.5
+  },
+  {
+    "student_id": "S1041",
+    "name": "Om Prakash",
+    "age": 20,
+    "course": "AI/ML",
+    "year": "3rd",
+    "attendance_percentage": 52,
+    "cgpa": 5.6,
+    "assignments": [
+      {"subject_name": "Speech Processing", "status": "Completed", "marks": 57},
+      {"subject_name": "Recommendation Systems", "status": "Pending", "marks": 0},
+      {"subject_name": "ML Lab", "status": "Completed", "marks": 55}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 5,
+    "risk_level": "Medium",
+    "predicted_cgpa": 5.3
+  },
+  {
+    "student_id": "S1042",
+    "name": "Preeti Shukla",
+    "age": 19,
+    "course": "IT",
+    "year": "2nd",
+    "attendance_percentage": 79,
+    "cgpa": 7.6,
+    "assignments": [
+      {"subject_name": "JavaScript", "status": "Completed", "marks": 77},
+      {"subject_name": "React Basics", "status": "Completed", "marks": 78},
+      {"subject_name": "Node.js", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Medium",
+    "predicted_cgpa": 7.4
+  },
+  {
+    "student_id": "S1043",
+    "name": "Quratulain Ahmed",
+    "age": 21,
+    "course": "B.Tech CSE",
+    "year": "4th",
+    "attendance_percentage": 31,
+    "cgpa": 4.0,
+    "assignments": [
+      {"subject_name": "High Performance Computing", "status": "Pending", "marks": 0},
+      {"subject_name": "VLSI Design", "status": "Pending", "marks": 0},
+      {"subject_name": "Major Project", "status": "Completed", "marks": 41}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 3,
+    "risk_level": "High",
+    "predicted_cgpa": 3.6
+  },
+  {
+    "student_id": "S1044",
+    "name": "Rohan Khanna",
+    "age": 18,
+    "course": "AI/ML",
+    "year": "1st",
+    "attendance_percentage": 84,
+    "cgpa": 8.1,
+    "assignments": [
+      {"subject_name": "Data Literacy", "status": "Completed", "marks": 82},
+      {"subject_name": "Python Libraries", "status": "Completed", "marks": 83},
+      {"subject_name": "Statistics Basics", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.2
+  },
+  {
+    "student_id": "S1045",
+    "name": "Sanya Arora",
+    "age": 20,
+    "course": "IT",
+    "year": "3rd",
+    "attendance_percentage": 71,
+    "cgpa": 6.9,
+    "assignments": [
+      {"subject_name": "Digital Marketing", "status": "Completed", "marks": 71},
+      {"subject_name": "E-commerce Tech", "status": "Completed", "marks": 69},
+      {"subject_name": "SEO", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 6,
+    "risk_level": "Medium",
+    "predicted_cgpa": 6.7
+  },
+  {
+    "student_id": "S1046",
+    "name": "Tushar Bhardwaj",
+    "age": 22,
+    "course": "B.Tech CSE",
+    "year": "4th",
+    "attendance_percentage": 27,
+    "cgpa": 3.6,
+    "assignments": [
+      {"subject_name": "Embedded Systems", "status": "Pending", "marks": 0},
+      {"subject_name": "IoT Security", "status": "Pending", "marks": 0},
+      {"subject_name": "Thesis", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 2,
+    "risk_level": "High",
+    "predicted_cgpa": 3.0
+  },
+  {
+    "student_id": "S1047",
+    "name": "Urvashi Rautela",
+    "age": 19,
+    "course": "AI/ML",
+    "year": "2nd",
+    "attendance_percentage": 90,
+    "cgpa": 8.7,
+    "assignments": [
+      {"subject_name": "Computer Vision", "status": "Completed", "marks": 89},
+      {"subject_name": "Image Recognition", "status": "Completed", "marks": 87},
+      {"subject_name": "GANs", "status": "Completed", "marks": 88}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 8,
+    "risk_level": "Low",
+    "predicted_cgpa": 8.9
+  },
+  {
+    "student_id": "S1048",
+    "name": "Vikram Sood",
+    "age": 20,
+    "course": "IT",
+    "year": "3rd",
+    "attendance_percentage": 47,
+    "cgpa": 5.3,
+    "assignments": [
+      {"subject_name": "IT Project Mgmt", "status": "Pending", "marks": 0},
+      {"subject_name": "Quality Assurance", "status": "Completed", "marks": 54},
+      {"subject_name": "Agile Methodologies", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Pending",
+    "mental_health_score": 4,
+    "risk_level": "High",
+    "predicted_cgpa": 4.8
+  },
+  {
+    "student_id": "S1049",
+    "name": "Wahida Begum",
+    "age": 18,
+    "course": "B.Tech CSE",
+    "year": "1st",
+    "attendance_percentage": 81,
+    "cgpa": 7.8,
+    "assignments": [
+      {"subject_name": "Intro to Programming", "status": "Completed", "marks": 79},
+      {"subject_name": "Computer Basics", "status": "Completed", "marks": 80},
+      {"subject_name": "Technical Writing", "status": "Pending", "marks": 0}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 7,
+    "risk_level": "Medium",
+    "predicted_cgpa": 7.6
+  },
+  {
+    "student_id": "S1050",
+    "name": "Yogesh Deshmukh",
+    "age": 21,
+    "course": "AI/ML",
+    "year": "4th",
+    "attendance_percentage": 62,
+    "cgpa": 6.1,
+    "assignments": [
+      {"subject_name": "Explainable AI", "status": "Completed", "marks": 63},
+      {"subject_name": "Federated Learning", "status": "Pending", "marks": 0},
+      {"subject_name": "Industry Project", "status": "Completed", "marks": 61}
+    ],
+    "fees_status": "Paid",
+    "mental_health_score": 6,
+    "risk_level": "Medium",
+    "predicted_cgpa": 5.9
+  }
+]
