@@ -1,3 +1,4 @@
+import json
 import sqlite3
 from flask import Flask, jsonify, request, send_from_directory
 import os
@@ -226,39 +227,65 @@ def init_db():
     )
     """)
 
-    # --- SEED INITIAL DATA IF EMPTY ---
+# --- SEED INITIAL DATA IF EMPTY ---
     cur.execute("SELECT count(*) FROM students")
     if cur.fetchone()[0] == 0:
-        # Seed Profile
-        cur.execute("DELETE FROM profile")
-        cur.execute("""
-            INSERT INTO profile(full_name, student_id, email, phone, address, dob, blood_group, avatar_url) 
-            VALUES ('Demo Student', 'CS2024001', 'subh@university.edu', '+91 98765 43210', '123 Campus Rd', '2004-01-01', 'O+', '')
-        """)
 
-        # Seed Students
-        users = [
-            ('Aarav Sharma', 'CS2024001', 'aarav@uni.edu', 'CSE', '1st Year', 'A', 'Male'),
-            ('Vivaan Gupta', 'CS2024002', 'vivaan@uni.edu', 'CSE', '1st Year', 'A', 'Male'),
-            ('Diya Patel', 'CS2024003', 'diya@uni.edu', 'CSE', '1st Year', 'B', 'Female'),
-            ('Ishaan Kumar', 'ME2024001', 'ishaan@uni.edu', 'ME', '1st Year', 'A', 'Male')
-        ]
-        for u in users:
+    # Seed Profile
+     cur.execute("DELETE FROM profile")
+     cur.execute("""
+        INSERT INTO profile(full_name, student_id, email, phone, address, dob, blood_group, avatar_url) 
+        VALUES ('Demo Student', 'CS2024001', 'subh@university.edu', '+91 98765 43210', '123 Campus Rd', '2004-01-01', 'O+', '')
+    """)
+
+    # --- LOAD STUDENTS FROM JSON FILE ---
+    try:
+        with open('students.json', 'r') as f:
+            students_data = json.load(f)
+
+        for student in students_data:
             cur.execute("""
-                INSERT INTO students(full_name, roll_no, email, stream, current_class, section, gender, admission_date)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            """, (u + (datetime.now().strftime("%Y-%m-%d"),)))
+                INSERT INTO students(full_name, roll_no, email, phone, stream, current_class, section, dob, blood_group, gender, admission_date)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                student.get('name'),
+                str(student.get('student_id')),
+                student.get('email', f"student{student.get('student_id')}@uni.com"),
+                student.get('phone', '9999999999'),
+                student.get('course', 'CSE'),
+                student.get('year', '1st Year'),
+                student.get('section', 'A'),
+                student.get('dob', '2004-01-01'),
+                student.get('blood_group', 'O+'),
+                student.get('gender', 'Male'),
+                datetime.now().strftime("%Y-%m-%d")
+            ))
 
-        # Seed Circulars
-        cur.execute("INSERT INTO circulars(title, content, date_posted, audience) VALUES (?, ?, ?, ?)", 
-                   ("Holiday Announcement", "University will remain closed tomorrow.", datetime.now().strftime("%Y-%m-%d"), "All"))
-        
-        # Seed Fees
-        cur.execute("INSERT INTO fees(student_id, type, amount, status, due_date) VALUES (1, 'Tuition', 50000, 'Pending', '2025-04-01')")
-        cur.execute("INSERT INTO fees(student_id, type, amount, status, due_date) VALUES (2, 'Tuition', 50000, 'Paid', '2025-01-01')")
+        print("✅ Students loaded from JSON successfully")
 
-    con.commit()
-    con.close()
+    except Exception as e:
+        print("❌ Error loading JSON:", e)
+
+    # Seed Circulars
+    cur.execute("""
+        INSERT INTO circulars(title, content, date_posted, audience) 
+        VALUES (?, ?, ?, ?)
+    """, (
+        "Holiday Announcement",
+        "University will remain closed tomorrow.",
+        datetime.now().strftime("%Y-%m-%d"),
+        "All"
+    ))
+
+    # Seed Fees
+    cur.execute("""
+        INSERT INTO fees(student_id, type, amount, status, due_date) 
+        VALUES (1, 'Tuition', 50000, 'Pending', '2025-04-01')
+    """)
+    cur.execute("""
+        INSERT INTO fees(student_id, type, amount, status, due_date) 
+        VALUES (2, 'Tuition', 50000, 'Paid', '2025-01-01')
+    """)
 
 # Routes to serve HTML pages
 @app.route('/')
@@ -272,6 +299,20 @@ def serve_static(filename):
     return "File not found", 404
 
 # --- API ENDPOINTS ---
+
+@app.route('/api/student/<roll_no>')
+def get_student_by_roll(roll_no):
+    con = get_db_connection()
+    student = con.execute(
+        "SELECT * FROM students WHERE roll_no = ?",
+        (roll_no,)
+    ).fetchone()
+    con.close()
+
+    if student:
+        return jsonify(dict(student))
+    else:
+        return jsonify({"error": "Student not found"}), 404
 
 # 1. PROFILE API
 @app.route('/api/profile', methods=['GET', 'POST'])
@@ -466,7 +507,6 @@ def get_predictions():
     })
 
 if __name__ == '__main__':
-    print("Initializing Enhanced Database...")
     init_db()
-    print("Starting ProjexaAI Premium Backend on http://localhost:5000")
-    app.run(debug=True, port=5000)
+    print("Server running...")
+    app.run(debug=False, use_reloader=False)
