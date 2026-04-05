@@ -350,3 +350,14 @@ function renderSearchResults(results, container) {
 
     container.style.display = 'block';
 }
+
+let roll = "S1001";
+
+fetch(`http://127.0.0.1:5000/api/student/${roll}`)
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("studentName").innerText = data.full_name;
+  });
+
+    container.style.display = 'block';
+}
