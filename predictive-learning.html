@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive Learning - ProjexaAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .priority-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid var(--border-glass);
+            transition: 0.2s;
+        }
+
+        .priority-list-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .prediction-chart {
+            height: 250px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .bar {
+            width: 40px;
+            background: var(--primary);
+            border-radius: 6px 6px 0 0;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .bar:hover {
+            opacity: 0.8;
+            transform: scaleY(1.05);
+        }
+
+        .bar-label {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            width: 100px;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .bar-val {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-brain fa-2x text-gradient"></i>
+                <h2 style="margin:0; font-size: 20px;">ProjexaAI</h2>
+            </div>
+            <div class="nav-group">
+                <div class="nav-label">Main</div>
+                <a href="dashboard.html" class="nav-link">
+                    <i class="fa-solid fa-grid-2"></i> Dashboard
+                </a>
+                <a href="academics.html" class="nav-link">
+                    <i class="fa-solid fa-book-open"></i> Academics
+                </a>
+                <a href="people.html" class="nav-link">
+                    <i class="fa-solid fa-users"></i> People
+                </a>
+                <a href="learning-lms.html" class="nav-link">
+                    <i class="fa-solid fa-graduation-cap"></i> Learning (LMS)
+                </a>
+            </div>
+            <div class="nav-group">
+                <div class="nav-label">Core Differentiators</div>
+                <a href="mental-health.html" class="nav-link" style="color: var(--secondary); font-weight: 500;">
+                    <i class="fa-solid fa-heart-pulse"></i> Mental Health <span style="margin-left:auto">⭐</span>
+                </a>
+                <a href="predictive-learning.html" class="nav-link active"
+                    style="color: var(--secondary); font-weight: 500;">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Predictive Learning <span
+                        style="margin-left:auto">⭐</span>
+                </a>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-label">Administration</div>
+                <a href="attendance.html" class="nav-link"><i class="fa-solid fa-calendar-check"></i> Attendance</a>
+                <a href="exams-results.html" class="nav-link"><i class="fa-solid fa-file-signature"></i> Exams &
+                    Results</a>
+                <a href="fees-finance.html" class="nav-link"><i class="fa-solid fa-credit-card"></i> Fees & Finance</a>
+                <a href="communication.html" class="nav-link"><i class="fa-solid fa-comments"></i> Communication</a>
+                <a href="requests.html" class="nav-link"><i class="fa-solid fa-hand-holding-hand"></i> Requests</a>
+                <a href="reports.html" class="nav-link"><i class="fa-solid fa-chart-pie"></i> Reports</a>
+            </div>
+            <div style="margin-top: auto;">
+                <a href="documents.html" class="nav-link"><i class="fa-solid fa-folder"></i> Documents</a>
+                <a href="settings.html" class="nav-link"><i class="fa-solid fa-gear"></i> Settings</a>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="top-bar">
+                <div>
+                    <h2 style="margin:0;">Predictive Learning</h2>
+                    <p style="margin:0; font-size:14px;">AI-Powered Academic Coach</p>
+                </div>
+                <div style="display:flex; gap:15px; align-items:center;">
+                    <div class="badge badge-warning" style="font-size:14px; padding:6px 12px; color: white;">
+                        <i class="fa-solid fa-robot"></i> AI Analysis Active
+                    </div>
+                    <a href="profile.html">
+                        <div
+                            style="width:35px; height:35px; background:var(--gradient); border-radius:50%; background: #ccc; cursor: pointer;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <!-- PERFORMANCE FORECAST -->
+                <div class="glass-card" style="grid-column: span 2;">
+                    <div style="display:flex; justify-content:space-between;">
+                        <h3>Performance Forecast</h3>
+                        <span class="badge badge-success"
+                            style="height:fit-content; background:rgba(34, 197, 94, 0.2); color:var(--success);">Target:
+                            8.5 CGPA</span>
+                    </div>
+
+                    <div class="prediction-chart">
+                        <!-- Simple Bar Chart using CSS -->
+                        <div class="bar" style="height: 60%; background: #64748b;">
+                            <span class="bar-val">7.2</span>
+                            <span class="bar-label">Sem 1</span>
+                        </div>
+                        <div class="bar" style="height: 65%; background: #64748b;">
+                            <span class="bar-val">7.5</span>
+                            <span class="bar-label">Sem 2</span>
+                        </div>
+                        <div class="bar" style="height: 62%; background: #64748b;">
+                            <span class="bar-val">7.4</span>
+                            <span class="bar-label">Sem 3</span>
+                        </div>
+                        <!-- Predicted -->
+                        <div class="bar"
+                            style="height: 85%; background: var(--secondary); box-shadow: 0 0 15px var(--secondary);">
+                            <span class="bar-val">8.1</span>
+                            <span class="bar-label">Forecast</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:20px; background:rgba(255,255,255,0.05); padding:15px; border-radius:12px;">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+                            <span>Impact Simulator</span>
+                            <span style="font-size:12px; color:var(--text-muted)">Adjust slider to see impact</span>
+                        </div>
+                        <input type="range" style="width:100%; accent-color: var(--secondary);">
+                        <p style="font-size:13px; margin-top:10px;">If you improve <b>Maths</b> by +10 marks, your
+                            predicted CGPA becomes <b>8.3</b>.</p>
+                    </div>
+                </div>
+
+                <!-- SUBJECT PRIORITY LIST -->
+                <div class="glass-card">
+                    <h3>Priority Focus</h3>
+                    <p style="font-size:12px; margin-bottom:15px;">Based on attendance, weak arrears, and upcoming
+                        tests.</p>
+
+                    <div style="display:flex; flex-direction:column; gap:5px;">
+                        <div class="priority-list-item" style="border-left: 3px solid var(--error);">
+                            <div>
+                                <div style="font-weight:600;">Data Structures</div>
+                                <div style="font-size:11px; color:var(--error);">Critical • Exam in 3 days</div>
+                            </div>
+                            <i class="fa-solid fa-chevron-right" style="font-size:12px;"></i>
+                        </div>
+
+                        <div class="priority-list-item" style="border-left: 3px solid var(--error);">
+                            <div>
+                                <div style="font-weight:600;">Mathematics II</div>
+                                <div style="font-size:11px; color:var(--error);">Low Attendance (<75%)< /div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right" style="font-size:12px;"></i>
+                            </div>
+
+                            <div class="priority-list-item" style="border-left: 3px solid var(--warning);">
+                                <div>
+                                    <div style="font-weight:600;">Operating Systems</div>
+                                    <div style="font-size:11px; color:var(--warning);">Declining Trend</div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right" style="font-size:12px;"></i>
+                            </div>
+
+                            <div class="priority-list-item" style="border-left: 3px solid var(--success);">
+                                <div>
+                                    <div style="font-weight:600;">English</div>
+                                    <div style="font-size:11px; color:var(--success);">On Track</div>
+                                </div>
+                                <i class="fa-solid fa-check" style="font-size:12px; color:var(--success);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="margin:30px 0 20px 0;">Actionable Study Plan</h3>
+                <div class="grid-4">
+                    <div class="glass-card zoom-hover">
+                        <i class="fa-solid fa-code fa-2x text-gradient" style="margin-bottom:15px;"></i>
+                        <h4>Practice Graph Algos</h4>
+                        <p style="font-size:12px;">Solve 5 problems on DFS/BFS.</p>
+                        <div style="font-size:11px; color:var(--success); margin-top:10px;"><i
+                                class="fa-solid fa-arrow-trend-up"></i> +2% Exam Score Impact</div>
+                    </div>
+
+                    <div class="glass-card zoom-hover">
+                        <i class="fa-solid fa-calculator fa-2x text-gradient" style="margin-bottom:15px;"></i>
+                        <h4>Revise Matrices</h4>
+                        <p style="font-size:12px;">Review Eigenvalues notes.</p>
+                        <div style="font-size:11px; color:var(--success); margin-top:10px;"><i
+                                class="fa-solid fa-arrow-trend-up"></i> +4% Exam Score Impact</div>
+                    </div>
+
+                    <div class="glass-card zoom-hover">
+                        <i class="fa-solid fa-book fa-2x text-gradient" style="margin-bottom:15px;"></i>
+                        <h4>Read OS Chapter 4</h4>
+                        <p style="font-size:12px;">Process Scheduling concepts.</p>
+                        <div style="font-size:11px; color:var(--success); margin-top:10px;"><i
+                                class="fa-solid fa-arrow-trend-up"></i> High Confidence</div>
+                    </div>
+
+                    <div class="glass-card zoom-hover">
+                        <i class="fa-solid fa-vial fa-2x text-gradient" style="margin-bottom:15px;"></i>
+                        <h4>Attempt Mock Quiz</h4>
+                        <p style="font-size:12px;">15 min quick test on DS.</p>
+                        <button class="btn btn-primary"
+                            style="padding:4px 10px; font-size:11px; width:100%; margin-top:5px;">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPT -->
+        <script src="script.js"></script>
+</body>
+
+</html>
